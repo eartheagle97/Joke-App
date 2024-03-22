@@ -50,11 +50,10 @@ export default function Home() {
     if (joke) {
       speakJoke(joke);
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [joke]);
 
   return (
-    <main className="flex min-h-screen flex-col items-center">
+    <main className="flex min-h-screen flex-col items-center mt-10">
       <Image src={Initial} width={500} height={500} alt="Robot" />
       {joke && (
         <div className="text-center font-mono md:w-3/5 sm:w-2/3 bg-white p-12 mt-4 mb-8 rounded-xl m-12">
