@@ -50,6 +50,7 @@ export default function Home() {
     if (joke) {
       speakJoke(joke);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [joke]);
 
   return (
@@ -76,7 +77,7 @@ export default function Home() {
         >
           Kairav Patel
         </a>{" "}
-        | All Rights Reserved.
+        | All Rights Reversed.
       </p>
     </main>
   );
